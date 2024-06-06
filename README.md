@@ -1,0 +1,34 @@
+
+# Face Recognition(cnn)
+
+This is a face recognition cnn model implemented
+using tensorflow
+
+
+## Techniques used
+
+ - [ImageDataGenerator](https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/image/ImageDataGenerator)
+ - [MobileNetV2](https://www.tensorflow.org/api_docs/python/tf/keras/applications/MobileNetV2)
+ - [Convolution Neural Network](https://www.tensorflow.org/tutorials/images/cnn)
+
+
+## Working Description
+1.I USE FACIAL DATASET FROM KAGGLE AND MODIFIED IT TO 3 CLASSES
+
+2.THEN I COMPLETELY ANALYSE DATA DOMAIN AND FOUND THAT IT IS COMPLETLY BALANCED
+
+3.THEN I REMOVED CORRUPTED IMAGES THAT ARE FAILED TO OPEN
+
+4.THEN I PERFORM DATA AUGMENTATION USING IMAGEDATAGENERATOR
+
+5.AFTER THAT I USE TRANSFER LEARNING BY USING MOBILENETV2
+
+6.THEN I TRAINED A MODEL WITH TRAINING ACCURACY OF 98% AND TESTING ACCURACY OF 80% DUE TO HAVING LESS NUMBER OF DATA
+
+7.THEN PLOT CONFUSION MATRIX
+
+8.THEN EVALUATE A MODEL BY PRECISION,RECALL,F1SCORE
+
+9.THEN TEST IT WITH RANDOM DATA AND IT PREDICT CORRECTLY
+
+10.THEN CALCULATE NUMBER OF MISCLASSIFICATION AND FOUND 12 OUT OF 60 ARE MISCLASSIFIED
